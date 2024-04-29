@@ -1,9 +1,9 @@
 
 [mod]
 title: ASW: Sarduakar Assault (1.0)
-description: An expansion for Arrakis: Spice Wars, which adds the Sarduakar, a micro focused faction, with their units being based around smaller armies. \n DISCLAIMER: All the assets like sound effects and sprites are Westwood Studios', originally used for the original game made back in the 90s. \n Thank you Hyasabaru for making such a excellent mod. \n Made by GDI Grenadier.
+description: An expansion for Arrakis: Spice Wars, which adds the Sarduakar, a micro focused faction, with their units being based around smaller armies. \n Made by GDI Grenadier.
 
-tags: starting-units, units, total conversion, tanks, hi-tech, planetary warfare
+tags: asw, addon
 
 #Hyasabaru's Discord Server: https://discord.gg/jj4YVY9spW
 #My Discord Tag: gdigrenadier
