@@ -1,0 +1,34 @@
+name: Publish
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  Release:
+    runs-on: ubuntu-22.04
+    permissions: write-all
+    steps:
+      - name: Create Directory
+        run: mkdir -p painandsuffering/
+
+      - name: Clone Repository
+        uses: actions/checkout@v3
+        with:
+          path: painandsuffering/
+
+      - name: Install Zip
+        run: sudo apt install zip unzip
+      
+      - name: Archive Repository
+        run: zip -r ASW-${{ github.ref_name }}.rwmod painandsuffering/
+
+      - name: Upload release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ASW-${{ github.ref_name }}.rwmod
+          asset_name: ASW-${{ github.ref_name }}.rwmod
+          tag: ${{ github.ref_name }}
+          overwrite: true
